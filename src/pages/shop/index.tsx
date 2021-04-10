@@ -56,7 +56,7 @@ function Shop() {
         <title>Loja | VoltzMC</title>
       </Head>
 
-      <Sidebar page='shop'/>
+      <Sidebar />
 
       <ExperienceBar />
 
