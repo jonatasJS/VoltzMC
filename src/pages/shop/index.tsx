@@ -5,7 +5,7 @@ import Sidebar from '../../components/Sidebar';
 import ExperienceBar from '../../components/ExperienceBar';
 import ChallengeBox, { VipBox, CashBox } from '../../components/ChallengeBox';
 
-import Container from './styles';
+import { Container } from './styles';
 
 function Shop() {
   const [ defaultItem, setDefaultItem ] = useState(true);
