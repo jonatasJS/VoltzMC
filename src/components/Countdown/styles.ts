@@ -65,7 +65,7 @@ export const CountdownButton = styled.button`
     }
 
     &:not(:disabled):hover {
-      background: ${theme.colors.goldDark};
+      background: ${theme.colors.gold};
     }
 
     &:disabled {
