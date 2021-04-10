@@ -13,7 +13,6 @@ interface Theme {
     red: string;
     green: string;
     gold: string;
-    goldDark: string;
     goldLight: string;
     twitter: string;
     discord: string;
