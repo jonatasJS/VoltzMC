@@ -11,7 +11,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 import { Container, LightSwitch, LinkToHome } from './styles';
 
-function Sidebar({ page }) {
+function Sidebar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const mode = `Modo ${theme}`;
 
