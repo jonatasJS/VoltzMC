@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import Sidebar from '../../components/Sidebar';
 import { ExperienceBar } from '../../components/ExperienceBar';
@@ -13,6 +14,11 @@ function Shop() {
   const [ optionDark, setOptionDark ] = useState(false);
   const [ optionPvp, setOptionPvp ] = useState(false);
   const [ optionGeral, setOptionGeral ] = useState(false);
+  const { query } = useRouter();
+
+  function itemSelected() {
+    console.log(query.items);
+  }
 
   function overpower() {
     setDefaultItem(false);
@@ -79,7 +85,7 @@ function Shop() {
       {defaultItem ? (
         <section className="default">
           <div className="title">
-            <img src="https://crafatar.com/renders/head/02b0e307-a4e4-45fe-87fb-72ade4f2a0aa" alt="zPG0D"/>
+            <img src="https://crafatar.com/renders/head/02b0e307-a4e4-45fe-87fb-72ade4f2a0aa" alt="zPG0D" onClick={itemSelected}/>
             <h1><strong>ATENÇÃO:</strong> Confira todos os dados na hora do pagamento.</h1>
           </div>
           <div className="description">

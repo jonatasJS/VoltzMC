@@ -1,9 +1,12 @@
+import React from 'react';
+import Link from 'next/link';
+
 import {
   Container,
   ChallengeNotActive,
 } from './styles';
 
-const ChallengeBox = () => {
+export default function ChallengeBox() {
 
   return (
     <Container>
@@ -31,10 +34,12 @@ export function VipBox() {
             <img src="logos/Vip.png" style={{
               height: 170,
               width: 150
-            }} alt="Level Up" />
+            }} alt="Vips" />
             <strong>VIPs</strong>
           </p>
-          <button>Acessar</button>
+          <Link href="/overpower/vips">
+            <button>Acessar</button>
+          </Link>
         </ChallengeNotActive>
     </Container>
   );
@@ -50,13 +55,14 @@ export function CashBox() {
             <img src="logos/Cash.png" style={{
               height: 170,
               width: 170
-            }} alt="Level Up" />
+            }} alt="Cash" />
             <strong>Cash</strong>
           </p>
-          <button>Acessar</button>
+          <Link href="/overpower/cash">
+            <button>Acessar</button>
+          </Link>
         </ChallengeNotActive>
     </Container>
   );
 };
 
-export default ChallengeBox;

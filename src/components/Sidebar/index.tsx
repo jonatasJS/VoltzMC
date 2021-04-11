@@ -21,7 +21,7 @@ function Sidebar({ page }) {
         margin: '1.5rem'
       }}>
         <Link href="/">
-          <img src="favicon.png" alt="VoltzMC" />
+          <img src="/favicon.png" alt="VoltzMC" />
         </Link>
       </LinkToHome>
       <nav>
