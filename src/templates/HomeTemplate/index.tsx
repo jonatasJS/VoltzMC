@@ -16,7 +16,7 @@ export default function HomeTemplate(req, res) {
       <title>Erro 404 | VoltzMC</title>
     </Head>
 
-    <Sidebar page="404" />
+    <Sidebar />
     <section>
       {<h1>404</h1>}
       {asPath ? <p>Rota <strong>'{ asPath }'</strong> não foi encontrada!</p> : <p>Página não encontrada!</p>}
