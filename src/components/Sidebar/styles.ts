@@ -54,10 +54,42 @@ export const Container = styled.div`
     }
 
     .home {
-      color: ${({ theme }) => theme.colors.goldLight};
+      color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.gold};
+        color: ${({ theme }) => theme.colors.goldLight};
+      }
+    }
+
+    .shop {
+      color: ${({ theme }) => theme.colors.gold};
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.goldLight};
+      }
+    }
+
+    .cart {
+      color: ${({ theme }) => theme.colors.gold};
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.goldLight};
+      }
+    }
+
+    .team {
+      color: ${({ theme }) => theme.colors.gold};
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.goldLight};
+      }
+    }
+
+    .help {
+      color: ${({ theme }) => theme.colors.gold};
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.goldLight};
       }
     }
 

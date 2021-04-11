@@ -11,7 +11,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 import { Container, LightSwitch, LinkToHome } from './styles';
 
-function Sidebar() {
+function Sidebar({ page }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const mode = `Modo ${theme}`;
 
@@ -26,24 +26,24 @@ function Sidebar() {
       </LinkToHome>
       <nav>
         <Link href="/">
-          <Home size={32} className="home" title="Inicio" style={{ cursor: 'pointer' }}/>
+          <Home size={32} className={(page == 'home') && page} title="Inicio" style={{ cursor: 'pointer' }}/>
         </Link> {/**
          * RiShoppingBasketLine
          */}
         <Link href="/shop">
-          <Shop color="CCD6F6" title="Loja" size={32} style={{ cursor: 'pointer' }}/>
+          <Shop color="CCD6F6" className={(page == 'shop') && page} title="Loja" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <Link href="/cart">
-          <Cart color="CCD6F6" title="Carrinho" size={32} style={{ cursor: 'pointer' }}/>
+          <Cart color="CCD6F6" className={(page == 'cart') && page} title="Carrinho" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <Link href="/team">
-          <Team color="CCD6F6" title="Equipe" size={32} style={{ cursor: 'pointer' }}/>
+          <Team color="CCD6F6" className={(page == 'team') && page} title="Equipe" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <Link href="/#">
           <Discord className="discord" color="CCD6F6" title="Discord" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <Link href="/help">
-          <Help color="CCD6F6" title="Ajuda" size={32} style={{ cursor: 'pointer' }}/>
+          <Help color="CCD6F6" className={(page == 'help') && page} title="Ajuda" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <LightSwitch activeTheme={theme}>
           <Light title={mode} onClick={toggleTheme} size={32} />

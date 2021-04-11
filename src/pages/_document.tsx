@@ -60,6 +60,8 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <script src="https://www.paypalobjects.com/api/checkout.js" />
         </body>
       </Html>
     );

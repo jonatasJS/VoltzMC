@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 
 import Sidebar from '../../components/Sidebar';
-import ExperienceBar from '../../components/ExperienceBar';
+import { ExperienceBar } from '../../components/ExperienceBar';
 import ChallengeBox, { VipBox, CashBox } from '../../components/ChallengeBox';
 
 import { Container } from '../../styles/shop';
@@ -56,7 +56,7 @@ function Shop() {
         <title>Loja | VoltzMC</title>
       </Head>
 
-      <Sidebar />
+      <Sidebar page="shop"/>
 
       <ExperienceBar />
 
