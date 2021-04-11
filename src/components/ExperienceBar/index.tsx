@@ -28,7 +28,7 @@ export function ExperienceBar() {
 
   return (
     <>
-      <Title className="title">
+      <Title>
         <span>{title}</span>
       </Title>
 

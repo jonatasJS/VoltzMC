@@ -39,7 +39,7 @@ function Sidebar({ page }) {
         <Link href="/team">
           <Team color="CCD6F6" className={(page == 'team') && page} title="Equipe" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
-        <Link href="/#">
+        <Link href="https://discord.gg/AkH7PWR2Pm">
           <Discord className="discord" color="CCD6F6" title="Discord" size={32} style={{ cursor: 'pointer' }}/>
         </Link>
         <Link href="/help">
