@@ -8,6 +8,7 @@ import { store } from '../store/store';
 
 import HomePage from '../templates/HomePage';
 import LoadScreen from '../components/LoadScreen';
+import LoginInterface from '../components/LoginInterface';
 import Routes from '../routes';
 
 interface HomeProps {
