@@ -19,7 +19,7 @@ export const Container = styled.header`
     div {
       height: 4px;
       background: ${({ theme }) => theme.colors.gold};
-      box-shadow: 0px 0px 10px 1px #FFAA00;
+      box-shadow: 0px 0px 10px 1px ${({ theme }) => theme.colors.gold};
       border-radius: 5px;
     }
   }

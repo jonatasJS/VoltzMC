@@ -66,6 +66,10 @@ export const ChallengeNotActive = styled.div`
       box-shadow: 0 0 10px ${({ theme }) => theme.colors.gold};
     }
   }
+
+  button.description {
+    margin-top: 0rem;
+  }
 `;
 
 export const ChallengeActive = styled.div`

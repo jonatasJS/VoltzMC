@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { ExperienceBar } from '../../../components/ExperienceBar';
-import Sidebar from '../../../components/Sidebar';
+import { ExperienceBar } from '../../../../components/ExperienceBar';
+import Sidebar from '../../../../components/Sidebar';
 
-import { Container } from '../../../styles/shop';
+import { Container } from '../../../../styles/shop';
 
 export default function Cash() {
 

@@ -1,4 +1,3 @@
-import { RenderPageResult } from 'next/dist/next-server/lib/utils';
 import Document, {
   DocumentContext,
   Head,
@@ -12,12 +11,8 @@ export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
-    console.log(ctx)
-    console.log(ctx.renderPage)
 
     try {
-      console.log('ctx');
-      console.log(ctx);
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props): React.ReactElement =>

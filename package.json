@@ -1,5 +1,5 @@
 {
-  "name": "moveit-next",
+  "name": "voltzmc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -53,5 +53,23 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
-  }
+  },
+  "description": "Site for server of minecraft, VoltzMC.",
+  "main": " ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sozinhoL/VoltzMC.git"
+  },
+  "keywords": [
+    "WebSite",
+    "Shop",
+    "React",
+    "Next"
+  ],
+  "author": "Jonatas Souza Soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sozinhoL/VoltzMC/issues"
+  },
+  "homepage": "https://github.com/sozinhoL/VoltzMC#readme"
 }

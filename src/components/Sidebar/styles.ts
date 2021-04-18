@@ -57,7 +57,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.goldLight};
+        text-shadow: ${({ theme }) => theme.colors.gold};
       }
     }
 
@@ -65,7 +65,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.goldLight};
+        text-shadow: ${({ theme }) => theme.colors.gold};
       }
     }
 
@@ -73,7 +73,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.goldLight};
+        text-shadow: ${({ theme }) => theme.colors.gold};
       }
     }
 
@@ -81,7 +81,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.goldLight};
+        text-shadow: ${({ theme }) => theme.colors.gold};
       }
     }
 
@@ -89,7 +89,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.colors.gold};
 
       &:hover {
-        color: ${({ theme }) => theme.colors.goldLight};
+        text-shadow: ${({ theme }) => theme.colors.gold};
       }
     }
 
