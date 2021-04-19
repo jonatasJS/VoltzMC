@@ -34,7 +34,6 @@ export default function Vips() {
           <ItemVip src="/logos/vips/VoltzLogo.png" title="Voltz" price="256,00" days="120" />
         </section>
       </div>
-
     </Container>
   );
 }
