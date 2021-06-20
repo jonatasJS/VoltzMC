@@ -14,7 +14,7 @@ export default function Cash() {
         <title>Loja | VoltzMC</title>
       </Head>
 
-      <Sidebar page="shop"/>
+      <Sidebar page="shop" setSelected selected />
 
       <div className="contents">
         <h1>Cash</h1>
