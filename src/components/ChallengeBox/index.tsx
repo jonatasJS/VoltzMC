@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import {
   Container,
@@ -9,7 +10,8 @@ import {
 export default function ChallengeBox() {
 
   return (
-    <Container>
+    <motion.div animate={{ scale: 1 }} whileHover={{ scale: 1.1 }} >
+      <Container>
         <ChallengeNotActive>
           <strong>NOVIDADES!!</strong>
           <p>
@@ -20,14 +22,18 @@ export default function ChallengeBox() {
             Novo cupom de desconto Feliz Pascoa!!
           </p>
         </ChallengeNotActive>
-    </Container>
+      </Container>
+    </motion.div>
   );
 };
 
 export function VipBox() {
 
   return (
-    <Container>
+    <motion.div animate={{
+      scale: 1,
+    }} whileHover={{ scale: 1.1 }} >
+      <Container>
         <ChallengeNotActive>
           {/* <strong>Vips</strong> */}
           <p>
@@ -41,14 +47,18 @@ export function VipBox() {
             <button>Acessar</button>
           </Link>
         </ChallengeNotActive>
-    </Container>
+      </Container>
+    </motion.div>
   );
 };
 
 export function CashBox() {
 
   return (
-    <Container>
+    <motion.div animate={{
+      scale: 1,
+    }} whileHover={{ scale: 1.1 }} >
+      <Container>
         <ChallengeNotActive>
           {/* <strong>NOVIDADES!!</strong> */}
           <p>
@@ -62,23 +72,25 @@ export function CashBox() {
             <button>Acessar</button>
           </Link>
         </ChallengeNotActive>
-    </Container>
+      </Container>
+    </motion.div>
   );
 };
 
 
 export function ItemVip({ src, price, title, days }) {
-  const [ descriptionState, setDescriptionState ] = useState('none');
+  const [descriptionState, setDescriptionState] = useState('none');
 
   function showDescription() {
     if (descriptionState == 'grid') setDescriptionState('none');
     else if (descriptionState == 'none') setDescriptionState('grid');
-
-    console.log(descriptionState);
   }
 
   return (
-    <Container>
+    <motion.div animate={{
+      scale: 1,
+    }} whileHover={{ scale: 1.1 }} >
+      <Container>
         <ChallengeNotActive>
           {/* <strong>NOVIDADES!!</strong> */}
           <p>
@@ -98,7 +110,7 @@ export function ItemVip({ src, price, title, days }) {
           <Link href="/shop/overpower/vips">
             <button>Acessar</button>
           </Link>
-          
+
           <button className="description" onClick={showDescription}>Detalhes</button>
 
           <div style={{
@@ -115,22 +127,24 @@ export function ItemVip({ src, price, title, days }) {
             }}>Ao adquirir esse produto, você se tornará um {title} por {days} dias!</span>
           </div>
         </ChallengeNotActive>
-    </Container>
+      </Container>
+    </motion.div>
   );
 };
 
 export function ItemCash({ src, price, amount, bonus }) {
-  const [ descriptionState, setDescriptionState ] = useState('none');
+  const [descriptionState, setDescriptionState] = useState('none');
 
   function showDescription() {
     if (descriptionState == 'grid') setDescriptionState('none');
     else if (descriptionState == 'none') setDescriptionState('grid');
-
-    console.log(descriptionState);
   }
 
   return (
-    <Container>
+    <motion.div animate={{
+      scale: 1,
+    }} whileHover={{ scale: 1.1 }} >
+      <Container>
         <ChallengeNotActive>
           {/* <strong>NOVIDADES!!</strong> */}
           <p>
@@ -147,11 +161,11 @@ export function ItemCash({ src, price, amount, bonus }) {
               fontSize: '1.4rem',
               margin: '0rem -1rem 0.5rem -1rem'
             }}>{
-              new Intl.NumberFormat('pt-BR')
-                .format(amount)
-                } Cash
+                new Intl.NumberFormat('pt-BR')
+                  .format(amount)
+              } Cash
             </strong>
-            {bonus !== '' ? <span style={{marginBottom: '0.5rem'}}>(+{new Intl.NumberFormat('pt-BR').format(bonus)})</span> : ''}
+            {bonus !== '' ? <span style={{ marginBottom: '0.5rem' }}>(+{new Intl.NumberFormat('pt-BR').format(bonus)})</span> : ''}
             <strong>R$ {
               price.toLocaleString('pt-BR', {
                 style: 'currency',
@@ -162,7 +176,7 @@ export function ItemCash({ src, price, amount, bonus }) {
           <Link href="/shop/overpower/vips">
             <button>Acessar</button>
           </Link>
-          
+
           <button className="description" onClick={showDescription}>Detalhes</button>
 
           <div style={{
@@ -172,7 +186,7 @@ export function ItemCash({ src, price, amount, bonus }) {
             padding: '1rem',
             transition: 'all 0.2s ease-in-out'
           }}>
-            <strong style={{fontSize: '2rem'}}>Detalhes</strong>
+            <strong style={{ fontSize: '2rem' }}>Detalhes</strong>
             <br />
             <span style={{
               textAlign: 'left',
@@ -180,7 +194,8 @@ export function ItemCash({ src, price, amount, bonus }) {
             }}>Ao adquirir esse produto, você receberá {new Intl.NumberFormat('pt-BR').format(amount)} cash in-game para gastar no /shop!</span>
           </div>
         </ChallengeNotActive>
-    </Container>
+      </Container>
+    </motion.div>
   );
 };
 

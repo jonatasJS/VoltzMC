@@ -9,6 +9,7 @@ const LoadScreen: React.FC = () => {
       <Head>
         <title>Início | VoltzMC</title>
       </Head>
+      
       <div className="loading">
         <div></div>
         <div></div>

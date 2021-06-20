@@ -8,7 +8,6 @@ import { Container } from './styles';
 export default function HomeTemplate(req, res) {
   const router = useRouter();
   const { asPath } = router;
-  console.log(req);
 
   return (
   <Container className="container">
@@ -16,11 +15,13 @@ export default function HomeTemplate(req, res) {
       <title>Erro 404 | VoltzMC</title>
     </Head>
 
-    <Sidebar page="404" />
+    <Sidebar key="" setSelected="" selected="" page="404" />
     <section>
-      {<h1>404</h1>}
+      <h1>404</h1>
       {asPath ? <p>Rota <strong>'{ asPath }'</strong> não foi encontrada!</p> : <p>Página não encontrada!</p>}
-      <p>Clique no icone da página para voltar a <strong>Home</strong></p>
+      <p>Clique no ícone da página para voltar a <strong style={{ 
+        fontWeight: "bold"
+       }}>Home</strong></p>
     </section>
   </Container>
 )}

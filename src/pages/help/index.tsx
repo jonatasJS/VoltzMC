@@ -11,8 +11,6 @@ function Team() {
         <title>Equipe | VoltzMC</title>
       </Head>
 
-      <Sidebar page="help"/>
-
       <h1>Equipe</h1>
     </Container>
   )

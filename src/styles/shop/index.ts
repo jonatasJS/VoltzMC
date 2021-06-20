@@ -81,13 +81,13 @@ export const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content: center;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     overflow: auto;
     margin-bottom: -1rem;
 
     @media (max-width: 960px) {
       padding-top: 15rem;
-      gap: 2rem;
+      gap: 3rem;
       overflow: auto;
     }
 
@@ -102,7 +102,7 @@ export const Container = styled.div`
     justify-content: center;
     text-align: center;
 
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     margin-bottom: -6rem;
   }
 

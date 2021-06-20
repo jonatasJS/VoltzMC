@@ -7,53 +7,15 @@ import { ExperienceBar } from '../../components/ExperienceBar';
 import ChallengeBox, { VipBox, CashBox } from '../../components/ChallengeBox';
 
 import { Container } from '../../styles/shop';
+import { Dark, Geral, Overpower, Pvp } from '../../components/ServerItens';
 
 function Shop() {
   const [ defaultItem, setDefaultItem ] = useState(true);
-  const [ optionOverpower, setOptionOverpower ] = useState(false);
-  const [ optionDark, setOptionDark ] = useState(false);
-  const [ optionPvp, setOptionPvp ] = useState(false);
-  const [ optionGeral, setOptionGeral ] = useState(false);
-  const { query } = useRouter();
+  const [ active, setActive ] = useState('none');
 
-  function itemSelected() {
-    console.log(query.items);
-  }
-
-  function overpower() {
+  function changeStates(server) {
     setDefaultItem(false);
-    setOptionDark(false);
-    setOptionPvp(false);
-    setOptionGeral(false);
-
-    setOptionOverpower(true);
-  }
-
-  function dark() {
-    setDefaultItem(false);
-    setOptionOverpower(false);
-    setOptionPvp(false);
-    setOptionGeral(false);
-    
-    setOptionDark(true);
-  }
-
-  function pvp() {
-    setDefaultItem(false);
-    setOptionOverpower(false);
-    setOptionDark(false);
-    setOptionGeral(false);
-    
-    setOptionPvp(true);
-  }
-
-  function geral() {
-    setDefaultItem(false);
-    setOptionOverpower(false);
-    setOptionDark(false);
-    setOptionPvp(false);
-    
-    setOptionGeral(true);
+    setActive(server);
   }
 
   return (
@@ -62,30 +24,26 @@ function Shop() {
         <title>Loja | VoltzMC</title>
       </Head>
 
-      <Sidebar page="shop"/>
-
-      <ExperienceBar />
-
       <h1 className="selection-title">Selecione o servidor!</h1>
 
       <div id="selection">
-        <div className={optionOverpower.valueOf().toString()} onClick={overpower}>
+        <div className={(active == 'overpower') && active} onClick={() => changeStates('overpower')}>
           <span>Rankup Overpower</span>
         </div>
-        <div className={optionDark.valueOf().toString()} onClick={dark}>
+        <div className={(active == 'dark') && active} onClick={() => changeStates('dark')}>
           <span>Rankup Dark</span>
         </div>
-        <div  className={optionPvp.valueOf().toString()} onClick={pvp}>
+        <div  className={(active == 'pvp') && active} onClick={() => changeStates('pvp')}>
           <span>Full PvP</span>
         </div>
-        <div  className={optionGeral.valueOf().toString()} onClick={geral}>
+        <div  className={(active == 'geral') && active} onClick={() => changeStates('geral')}>
           <span>Geral</span>
         </div>
       </div>
       {defaultItem ? (
-        <section className="default">
+        <section style={{ gap: '5rem', marginTop: '.5rem', marginBottom: '1rem' }} className="default">
           <div className="title">
-            <img src="https://crafatar.com/renders/head/02b0e307-a4e4-45fe-87fb-72ade4f2a0aa" alt="zPG0D" onClick={itemSelected}/>
+            <img src="https://crafatar.com/renders/head/02b0e307-a4e4-45fe-87fb-72ade4f2a0aa" alt="zPG0D"/>
             <h1><strong>ATENÇÃO:</strong> Confira todos os dados na hora do pagamento.</h1>
           </div>
           <div className="description">
@@ -93,45 +51,17 @@ function Shop() {
           </div>
         </section>
       ) : ''}
-      {optionOverpower ? (
-        <section>
-        <div>
-          <VipBox />
-        </div>
-        <div>
-          <CashBox />
-        </div>
-      </section>
+      {(active == 'overpower') ? (
+        <Overpower />
       ) : ''}
-      {optionDark ? (
-        <section>
-        <div>
-          <ChallengeBox />
-        </div>
-        <div>
-          <h1>Rankup Dark</h1>
-        </div>
-      </section>
+      {(active == 'dark')  ? (
+        <Dark />
       ) : ''}
-      {optionPvp ? (
-        <section>
-        <div>
-          <ChallengeBox />
-        </div>
-        <div>
-          <h1>Full PvP</h1>
-        </div>
-      </section>
+      {(active == 'pvp')  ? (
+        <Pvp />
       ) : ''}
-      {optionGeral ? (
-        <section>
-        <div>
-          <ChallengeBox />
-        </div>
-        <div>
-          <h1>Geral</h1>
-        </div>
-      </section>
+      {(active == 'geral')  ? (
+        <Geral />
       ) : ''}
       
     </Container>
@@ -139,7 +69,6 @@ function Shop() {
 }
 
 export default Shop;
-
 
 /**
  * backgroundColor={backgroundColor}

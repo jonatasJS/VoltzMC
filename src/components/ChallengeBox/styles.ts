@@ -11,6 +11,8 @@ export const Container = styled.div`
   justify-content: center;
   padding: 1.5rem 2rem;
   height: 100%;
+  margin-left: -1rem;
+  margin-right: -1rem;
   text-align: center;
   background: ${({ theme }) => theme.colors.backgroundLight};
   border-radius: 10px;
@@ -21,6 +23,7 @@ export const ChallengeNotActive = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -100%;
 
   strong {
     font-size: 1.5rem;

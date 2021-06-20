@@ -60,15 +60,24 @@ export const Container = styled.div`
       font-size: 17px;
     }
   }
+  
   section {
     flex: 1;
     display: grid;
+    gap: 5rem;
     grid-template-columns: 1fr 1fr;
-    gap: 6.25rem;
+
     align-content: center;
-    margin-top: -1rem;
     overflow: auto;
+
+    margin-top: -1rem;
+    margin-right: -5rem;
+    margin-left: -5rem;
     margin-bottom: -1rem;
+
+    padding-right: 5rem;
+    padding-left: 5rem;
+
     @media (max-width: 960px) {
       padding-top: 15rem;
       gap: 2rem;
@@ -105,7 +114,11 @@ export const Container = styled.div`
       grid-template-columns: 1fr;
       overflow: auto;
     }
-    .true {
+
+    div.overpower,
+    div.dark,
+    div.pvp,
+    div.geral {
       background: ${({ theme }) => theme.colors.backgroundOverlay};
       color: ${({ theme }) => theme.colors.gold};
       box-shadow: 0 0 5px 0.1px ${({ theme }) => theme.colors.gold};
@@ -130,6 +143,7 @@ export const Container = styled.div`
       box-shadow: ${({ theme }) => theme.boxShadow};
       cursor: pointer;
     }
+    
     div:hover {
       color: ${({ theme }) => theme.colors.grayLine};
       background: ${({ theme }) => theme.colors.backgroundHover}

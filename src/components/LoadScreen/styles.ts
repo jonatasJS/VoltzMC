@@ -5,8 +5,11 @@ export const Container = styled.div`
   .loading {
     display: flex;
     position: absolute;
+    align-items: center;
+    justify-content: center;
     width: 64px;
     height: 64px;
+    z-index: 99999;
 
     div {
       position: absolute;

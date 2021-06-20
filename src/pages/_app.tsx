@@ -1,17 +1,44 @@
+import React, { useState } from 'react';
+import use from 'react-router-dom';
+import Router, { useRouter } from 'next/router';
 import { AppProps } from 'next/app';
 import { Provider } from 'next-auth/client';
+import { AnimateSharedLayout } from 'framer-motion';
 
-import Routes from '../routes';
 import { ThemeProvider } from '../contexts/ThemeContext';
+import Sidebar from '../components/Sidebar';
+import { ExperienceBar } from '../components/ExperienceBar';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ThemeProvider>
-    <Provider session={pageProps.session}>
-      <Component {...pageProps} />
+import { Container } from '../templates/HomeTemplate/styles';
 
-      {/* <Routes /> */}
-    </Provider>
-  </ThemeProvider>
-);
+export default function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const routeFormated = router.asPath
+    .replace('/overpower/' , '')
+    .replace('/dark/' , '')
+    .replace('/pvp/' , '')
+    .replace('/geral/' , '')
+    .replace('/' , '');
+    
+  const [selected, setSelected] = useState('home');
 
-export default MyApp;
+  return (
+    <AnimateSharedLayout>
+      <ThemeProvider>
+        <Provider session={pageProps.session}>
+          <Container>
+            <Sidebar selected={selected} setSelected={setSelected} page="" />
+
+            {routeFormated == 'shop' ? '' : <ExperienceBar />}
+
+            <main>
+              <Component {...pageProps} />
+            </main>
+          </Container>
+
+          {/* <Routes /> */}
+        </Provider>
+      </ThemeProvider>
+    </AnimateSharedLayout>
+  );
+}

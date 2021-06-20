@@ -22,6 +22,22 @@ export const Container = styled.div`
     padding: 1rem;
   }
 
+  h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.arrow {
+    padding-bottom: 0rem;
+
+    cursor: pointer;
+  }
+
+  div.arrow svg:hover {
+    color: ${({ theme }) => theme.colors.gold};
+  }
+
   div.contents::-webkit-scrollbar {
     width: 10px;
   }
@@ -50,24 +66,22 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    h1 {
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-    }
-
     section {
       flex: 1;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 6.25rem;
+      gap: 6rem;
 
       align-content: center;
       
       margin-top: 2rem;
+      margin-bottom: 2rem;
+        margin-left: -3rem;
 
-      padding-top: 1rem;
+      padding-top: 0rem;
       padding-right: 0rem;
+      padding-left: 4.5rem;
+
   /* 
       padding-bottom: 0rem;
  */
