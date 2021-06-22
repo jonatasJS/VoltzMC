@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
             href="/favicon.png"
             type="image/png"
           />
-          <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+          <script src="https://raw.githubusercontent.com/jonatasJS/VoltzMC/main/loadingBar.js"></script>
           <link rel="stylesheet" href="https://raw.githubusercontent.com/jonatasJS/VoltzMC/main/loadingBar.css"/>
           <link
             rel="preconnect"
