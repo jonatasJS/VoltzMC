@@ -45,9 +45,6 @@ export default class MyDocument extends Document {
           />
           <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
           <link rel="stylesheet" href="https://raw.githubusercontent.com/jonatasJS/VoltzMC/main/loadingBar.css"/>
-          <style>
-            {styles}
-          </style>
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
