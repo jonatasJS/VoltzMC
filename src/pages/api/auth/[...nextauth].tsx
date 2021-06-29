@@ -5,8 +5,8 @@ import Providers from 'next-auth/providers';
 const options = {
   providers: [
     Providers.Auth0({
-      clientId: 'qcPN94Hv2CqjoHVSXLJCeSBTnhPaFMre',
-      clientSecret: 'U92gTVoK8OKkIf-Pd2GpFECbc2Jblk9F05ZWiMEu8Lfo83wMseORPnBoJ9gWI_Tq',
+      clientId: 'bNZUDMlccMipJmOPkMsmnyMWKSEvWnpU',
+      clientSecret: 'fT2kR3O6tV2U-v6ptbE-npLJhBVMxrTV9nq01P83PApxcvnTEZSEcyNWzWhQwqBG',
       domain: 'moveit-soxinho.us.auth0.com'
     })
   ]
