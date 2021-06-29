@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
             type="image/png"
           />
           <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"/>
+          {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"/> */}
           <link rel="stylesheet" href="https://raw.githubusercontent.com/jonatasJS/VoltzMC/main/loadingBar.css"/>
           <link
             rel="preconnect"
