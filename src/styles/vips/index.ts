@@ -59,6 +59,7 @@ export const Container = styled.div`
     -webkit-overflow-scrolling: touch;
 
     padding-right: 5rem;
+    padding-left: 1.5rem;
 
     height: calc(100% + 20%);
     width: calc(100% + 20%);

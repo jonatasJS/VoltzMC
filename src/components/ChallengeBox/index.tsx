@@ -108,7 +108,7 @@ export function ItemVip({ src, price, title, days }) {
             }</strong>
           </p>
           <Link href="/shop/overpower/vips">
-            <button>Acessar</button>
+            <button>Comprar</button>
           </Link>
 
           <button className="description" onClick={showDescription}>Detalhes</button>

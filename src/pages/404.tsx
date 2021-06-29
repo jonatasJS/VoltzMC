@@ -1,5 +1,3 @@
 import HomeTemplate from '../templates/HomeTemplate';
 
-export default () => {
-  return <HomeTemplate />
-}
+export default () => <HomeTemplate />

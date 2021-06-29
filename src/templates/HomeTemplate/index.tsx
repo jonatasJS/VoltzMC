@@ -5,9 +5,9 @@ import Sidebar from '../../components/Sidebar';
 
 import { Container } from './styles';
 
-export default function HomeTemplate(req, res) {
+export default function HomeTemplate() {
   const router = useRouter();
-  const { asPath } = router;
+  const { asPath, query } = router;
 
   return (
   <Container className="container">
@@ -15,7 +15,7 @@ export default function HomeTemplate(req, res) {
       <title>Erro 404 | VoltzMC</title>
     </Head>
 
-    <Sidebar key="" setSelected="" selected="" page="404" />
+    <Sidebar key="" setSelected="none" selected="" page="404" />
     <section>
       <h1>404</h1>
       {asPath ? <p>Rota <strong>'{ asPath }'</strong> não foi encontrada!</p> : <p>Página não encontrada!</p>}

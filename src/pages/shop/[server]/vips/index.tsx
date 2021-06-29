@@ -11,8 +11,6 @@ import { Container } from '../../../../styles/vips';
 import teste from '../../../../contexts/teste';
 
 export default function Vips() {
-  console.log(teste);
-
   function goBack() {
     Router.back();
   }
