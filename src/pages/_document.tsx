@@ -38,7 +38,17 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script><script id="navegg" type="text/javascript">
+  (function(n,v,g){o="Navegg";if(!n[o]){
+    a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a,b);n[o]=n[o]||function(parms){
+    n[o].q=n[o].q||[];n[o].q.push([this, parms])};}})
+  (window, document, 'https://tag.navdmp.com/universal.min.js');
+  window.naveggReady = window.naveggReady||[];
+  window.nvg77017 = new Navegg({
+    acc: 77017
+  });
+</script>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css" />
           <link
             rel="shortcut icon"
