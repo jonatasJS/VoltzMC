@@ -41,9 +41,9 @@ export default class MyDocument extends Document {
           <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
           <script id="navegg" type="text/javascript">
             (function(n,v,g){
-              lat o="Navegg";if(!n[o]){
-              lat a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
-              lat b.parentNode.insertBefore(a,b);n[o]=n[o]||function(parms){
+              let o="Navegg";if(!n[o]){
+              let a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
+              let b.parentNode.insertBefore(a,b);n[o]=n[o]||function(parms){
               n[o].q=n[o].q||[];n[o].q.push([this, parms])};}})
             (window, document, 'https://tag.navdmp.com/universal.min.js');
             window.naveggReady = window.naveggReady||[];
