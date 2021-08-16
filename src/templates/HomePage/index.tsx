@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import ChallengeBox from '../../components/ChallengeBox';
+import AdsBox from '../../components/AdsBox';
 
 import { Container } from './styles';
 
@@ -17,6 +18,9 @@ function HomePage () {
         </div>
         <div>
           <ChallengeBox />
+        </div>
+        <div>
+          <AdsBox />
         </div>
       </section>
     </Container>
