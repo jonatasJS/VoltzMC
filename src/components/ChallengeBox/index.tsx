@@ -27,7 +27,7 @@ export default function ChallengeBox() {
   );
 };
 
-export default function AdsBox() {
+export function AdsBox() {
 
   return (
     <motion.div animate={{ scale: 1 }} whileHover={{ scale: 1.1 }} >
