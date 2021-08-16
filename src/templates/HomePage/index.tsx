@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import ChallengeBox from '../../components/ChallengeBox';
-import AdsBox from '../../components/AdsBox';
+import { AdsBox } from '../../components/ChallengeBox';
 
 import { Container } from './styles';
 
