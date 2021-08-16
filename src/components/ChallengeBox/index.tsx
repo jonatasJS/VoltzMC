@@ -27,6 +27,25 @@ export default function ChallengeBox() {
   );
 };
 
+export default function AdsBox() {
+
+  return (
+    <motion.div animate={{ scale: 1 }} whileHover={{ scale: 1.1 }} >
+      <Container>
+        <ChallengeNotActive>
+          <ins className="adsbygoogle"
+                   style={{display:"block"}}
+                   data-ad-client="ca-pub-5593915309329672"
+                   data-ad-slot="7238080479"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true">
+          </ins>
+        </ChallengeNotActive>
+      </Container>
+    </motion.div>
+  );
+};
+
 export function VipBox() {
 
   return (
