@@ -17,10 +17,10 @@ function HomePage () {
           <ChallengeBox />
         </div>
         <div>
-          <ChallengeBox />
+          <AdsBox />
         </div>
         <div>
-          <AdsBox />
+          <ChallengeBox />
         </div>
       </section>
     </Container>
