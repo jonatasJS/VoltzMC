@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-          <script id="navegg" type="text/javascript">
+          <!-- <script id="navegg" type="text/javascript">
             (function(n,v,g){
               let o="Navegg";if(!n[o]){
               let a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
             window.nvg77017 = new Navegg({
               acc: 77017
             });
-          </script>
+          </script> -->
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css" />
           <link
             rel="shortcut icon"
