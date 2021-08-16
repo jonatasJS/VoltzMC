@@ -40,7 +40,23 @@ export default function Home (props: HomeProps) {
       >
         {/* <Routes /> */}
         {loading ?
-          <LoadScreen /> :
+          (
+            <>
+              <LoadScreen />
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593915309329672" crossorigin="anonymous"></script>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593915309329672" crossorigin="anonymous"></script>
+              <!-- ad1 -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-5593915309329672"
+                   data-ad-slot="7238080479"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </>
+          ) :
           <div style={{
             overflow: 'auto'
           }}>
