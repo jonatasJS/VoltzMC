@@ -35,8 +35,8 @@ export function AdsBox() {
         <ChallengeNotActive>
           <ins className="adsbygoogle"
                    style={{display:"block"}}
-                   data-ad-client="ca-pub-5593915309329672"
-                   data-ad-slot="7238080479"
+                   data-ad-client="ca-pub-4515639184646084"
+                   data-ad-slot="6793505140"
                    data-ad-format="auto"
                    data-full-width-responsive="true">
           </ins>
