@@ -43,7 +43,7 @@ export default function Home (props: HomeProps) {
           (
             <>
               <LoadScreen />
-              <ins class="adsbygoogle"
+              <ins className="adsbygoogle"
                    style={{display:"block"}}
                    data-ad-client="ca-pub-5593915309329672"
                    data-ad-slot="7238080479"
