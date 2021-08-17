@@ -41,6 +41,8 @@ export default class MyDocument extends Document {
           <script data-ad-client="ca-pub-4515639184646084" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
           
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084" crossOrigin="anonymous" />
+          
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css" />
           <link
             rel="shortcut icon"
@@ -66,7 +68,6 @@ export default class MyDocument extends Document {
 
           <script src="https://www.paypalobjects.com/api/checkout.js" />
           
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084" crossOrigin="anonymous" />
            <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
