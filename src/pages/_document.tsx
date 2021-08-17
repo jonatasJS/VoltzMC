@@ -69,7 +69,9 @@ export default class MyDocument extends Document {
           <script src="https://www.paypalobjects.com/api/checkout.js" />
           
            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+            window.addEventListener( 'load', () => {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            });
           </script>
         </body>
       </Html>
