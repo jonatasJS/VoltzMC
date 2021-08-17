@@ -70,10 +70,12 @@ export default class MyDocument extends Document {
           
            <script>
             setTimeout(() => {
-              window.addEventListener( 'load', () => {
                 (adsbygoogle = window.adsbygoogle || []).push({});
-              });
-            }, 10000);
+
+                window.addEventListener( 'load', () => {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                });
+            }, 1000);
           </script>
         </body>
       </Html>
