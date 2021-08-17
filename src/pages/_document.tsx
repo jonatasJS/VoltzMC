@@ -65,8 +65,8 @@ export default class MyDocument extends Document {
           <NextScript />
 
           <script src="https://www.paypalobjects.com/api/checkout.js" />
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084" crossOrigin="anonymous" />
           
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084" crossOrigin="anonymous" />
            <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
