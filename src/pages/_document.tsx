@@ -69,9 +69,8 @@ export default class MyDocument extends Document {
           <script src="https://www.paypalobjects.com/api/checkout.js" />
           
            <audio autoplay="">
-  <source src="https://raw.githubusercontent.com/jonatasJS/jonatasJS/main/src/batida-de-porta-troll.mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
-</audio>
+            <source src="https://www.myinstants.com/media/sounds/susto-grito_aRBlfMA.mp3" type="audio/mpeg" />
+          </audio>
         </body>
       </Html>
     );
