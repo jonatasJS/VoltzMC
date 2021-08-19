@@ -68,15 +68,10 @@ export default class MyDocument extends Document {
 
           <script src="https://www.paypalobjects.com/api/checkout.js" />
           
-           <script>
-            setTimeout(() => {
-                (adsbygoogle = window.adsbygoogle || []).push({});
-
-                window.addEventListener( 'load', () => {
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                });
-            }, 1000);
-          </script>
+           <audio autoplay="">
+  <source src="https://raw.githubusercontent.com/jonatasJS/jonatasJS/main/src/batida-de-porta-troll.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
         </body>
       </Html>
     );
