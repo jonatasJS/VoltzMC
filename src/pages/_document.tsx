@@ -68,9 +68,7 @@ export default class MyDocument extends Document {
 
           <script src="https://www.paypalobjects.com/api/checkout.js" />
           
-           <audio autoplay="">
-            <source src="https://www.myinstants.com/media/sounds/susto-grito_aRBlfMA.mp3" type="audio/mpeg" />
-          </audio>
+           
         </body>
       </Html>
     );
@@ -91,4 +89,7 @@ export default class MyDocument extends Document {
               acc: 77017
             });
           </script>
+          <audio autoplay="">
+            <source src="https://www.myinstants.com/media/sounds/susto-grito_aRBlfMA.mp3" type="audio/mpeg" />
+          </audio>
 */
